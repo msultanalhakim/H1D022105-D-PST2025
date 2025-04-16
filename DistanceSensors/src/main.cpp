@@ -1,21 +1,20 @@
 #include <Arduino.h>
 
-int trigPin = D3;  // Trigger pin sensor ke D3
-int echoPin = D0;  // Echo pin sensor ke D0
-int led = D2;      // LED ke D2 (FIXED MISSING SEMICOLON)
+int trigPin = D3;
+int echoPin = D0;
+int led = D2;
 
 long duration;
 float distance;
 
 void setup() {
-    pinMode(trigPin, OUTPUT);  // TRIG harus OUTPUT
-    pinMode(echoPin, INPUT);   // ECHO harus INPUT
-    pinMode(led, OUTPUT);      // Gunakan variabel led, bukan LED_PIN
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT); 
+    pinMode(led, OUTPUT);
     Serial.begin(9600);
 }
 
 void loop() {
-    // Kirim pulsa ultrasonik
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
     digitalWrite(trigPin, HIGH);
