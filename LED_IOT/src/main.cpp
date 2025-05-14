@@ -4,14 +4,11 @@
 #include <ESP8266WiFi.h>
 #include <ESPAsyncTCP.h>
 
-const char* ssid = "Modal Bos";
-const char* password = "12345678";
+const char* ssid = "Leraven";
+const char* password = "kingslot88";
 int LED1 = D0;
 int LED2 = D2;
 int LED3 = D4;
-
-const char* sta_ssid = "Leraven";
-const char* sta_password = "kingslot88"; 
 
 ESP8266WebServer server(80);
 String webpage;
