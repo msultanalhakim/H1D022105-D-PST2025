@@ -45,7 +45,7 @@ void loop () {
         delay(10);
       }
       isOpen = false;
-      Serial.println("Palang tertutup");
+      Serial.println("Palang tertutup");  
   }
   delay(500);
 }
