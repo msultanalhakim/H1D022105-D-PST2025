@@ -6,7 +6,10 @@
 
 const char* ssid = "Leraven";
 const char* password = "kingslot88";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c59bcfeed74f9fe426cc248ce6e1c8d9835c336
 int LED1 = D0;
 int LED2 = D2;
 int LED3 = D4;
